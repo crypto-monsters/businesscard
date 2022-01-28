@@ -1,2 +1,2 @@
-# businesscard
-My personal digital Business Card
+# Crypto Monsters Businesscard
+Crypto Monsters Businesscard
