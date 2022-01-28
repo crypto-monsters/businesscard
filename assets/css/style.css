@@ -1,13 +1,15 @@
 header {
   height: 20vh;
   width: 100%;
-  background: #262525;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../img/background.webp");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/background.webp");
+  background-position-y: -10px;
 }
 
 main {
   background-color: #19181F;
-  border-radius: .5rem .5rem 0 0;
-  margin-top: -.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  margin-top: -0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,7 +94,7 @@ main section {
   background-color: #262525;
   color: #fff;
   text-decoration: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .links a.whatsapp-link {
@@ -150,7 +152,7 @@ main section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .qr-code img {
@@ -160,8 +162,8 @@ main section {
 
 .qr-code:hover {
   background-color: #e2dcdc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .qr-code-modal {
@@ -201,7 +203,7 @@ main section {
   background: #262525;
   color: #fff;
   text-decoration: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   max-width: 350px;
   border: none;
   font-size: 1.25rem;
