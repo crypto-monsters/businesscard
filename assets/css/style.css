@@ -4,6 +4,7 @@ header {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../img/background.webp");
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/background.webp");
   background-position-y: -10px;
+  background-position-x: center;
 }
 
 main {
@@ -164,6 +165,49 @@ main section {
   background-color: #e2dcdc;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+.video-display {
+  max-width: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-display > .wrapper {
+  max-width: 425px;
+  overflow-x: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  padding-right: 0;
+}
+
+@media (max-width: 1024px) {
+  .video-display > .wrapper::-webkit-scrollbar {
+    display: none !important;
+  }
+}
+
+.video-display iframe, .video-display img {
+  border-radius: 1rem;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 425px;
+}
+
+.content-wrapper + .contentWrapper {
+  margin-top: 1.5rem;
+}
+
+.content-wrapper h3 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: left;
+  margin: 2.5rem 0 1rem;
 }
 
 .qr-code-modal {
